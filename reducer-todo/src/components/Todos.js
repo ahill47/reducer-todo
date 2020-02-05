@@ -16,7 +16,7 @@ const Todos = () => {
         <div>
             <div>
                 {state.map(data => (
-                <TodoCard
+                <TodoCard key={data.id}
                 item = {data.item}
                 id = {data.id}
                 completed = {data.completed}
